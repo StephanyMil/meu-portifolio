@@ -1,0 +1,79 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$portfolio-primary-palette: (
+  50: #f7f9f2,
+  100: #eaf0d8,
+  200: #dce7bb,
+  300: #cedd9e,
+  400: #c4d688,
+  500: #b9cf72,
+  600: #a7c062,
+  700: #859B48,
+  800: #6d813a,
+  900: #4a5a23,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+  )
+);
+
+$portfolio-accent-palette: (
+  50: #fbf8f6,
+  100: #f5ede8,
+  200: #f0e3da,
+  300: #ead8cc,
+  400: #e5d0c2,
+  500: #DFC8B6,
+  600: #d8c0ac,
+  700: #d0b6a1,
+  800: #c9ac96,
+  900: #bf9d83,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+  )
+);
+
+$portfolio-primary: mat.m2-define-palette($portfolio-primary-palette, 700);
+$portfolio-accent: mat.m2-define-palette($portfolio-accent-palette, 500);
+$portfolio-warn: mat.m2-define-palette(mat.$m2-red-palette);
+
+$portfolio-light-theme: mat.m2-define-light-theme((
+  color: (
+    primary: $portfolio-primary,
+    accent: $portfolio-accent,
+    warn: $portfolio-warn,
+  )
+));
+
+$portfolio-dark-theme: mat.m2-define-dark-theme((
+  color: (
+    primary: $portfolio-primary,
+    accent: $portfolio-accent,
+    warn: $portfolio-warn,
+  )
+));
+
+@include mat.all-component-themes($portfolio-light-theme);
+
+.dark {
+  @include mat.all-component-colors($portfolio-dark-theme);
+}

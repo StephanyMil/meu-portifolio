@@ -1,0 +1,32 @@
+<mat-toolbar class="!bg-cream/80 dark:!bg-forest/80 backdrop-blur-sm fixed top-0 z-50 !text-forest dark:!text-cream">
+  <div class="container mx-auto flex justify-between items-center w-full">
+    <a routerLink="/" class="text-xl font-bold text-olive">Stephany Milhomem</a>
+
+    <!-- Menu para telas grandes -->
+    <div class="hidden md:flex items-center space-x-2">
+      <a mat-button routerLink="/projetos" routerLinkActive="font-semibold !text-olive">Projetos</a>
+      <a mat-button routerLink="/conhecimentos" routerLinkActive="font-semibold !text-olive">Conhecimentos</a>
+      <a mat-button routerLink="/curriculo" routerLinkActive="font-semibold !text-olive">Currículo</a>
+      <a mat-button routerLink="/contato" routerLinkActive="font-semibold !text-olive">Contato</a>
+      <button mat-icon-button (click)="toggleTheme()" aria-label="Toggle theme">
+        <mat-icon>{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
+      </button>
+    </div>
+
+    <!-- Menu para telas pequenas -->
+    <div class="md:hidden">
+      <button mat-icon-button (click)="toggleTheme()" aria-label="Toggle theme" class="mr-2">
+        <mat-icon>{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
+      </button>
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Open navigation menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <a mat-menu-item routerLink="/projetos">Projetos</a>
+        <a mat-menu-item routerLink="/conhecimentos">Conhecimentos</a>
+        <a mat-menu-item routerLink="/curriculo">Currículo</a>
+        <a mat-menu-item routerLink="/contato">Contato</a>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>
