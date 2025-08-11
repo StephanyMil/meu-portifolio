@@ -1,1 +1,69 @@
-<p>projects works!</p>
+<section class="container mx-auto px-6 py-16">
+  <h1 class="text-4xl font-bold text-center mb-12">Meus Projetos</h1>
+
+  <!-- Projetos Pessoais -->
+  <div class="mb-16">
+    <h2 class="text-3xl font-semibold border-b-2 border-olive pb-2 mb-8">Projetos Pessoais</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card de Projeto 1 -->
+      <mat-card class="!bg-blush/30 dark:!bg-forest/50 transition-shadow hover:shadow-xl flex flex-col">
+        <mat-card-header>
+          <mat-card-title>Portfólio Pessoal</mat-card-title>
+          <mat-card-subtitle>Este mesmo site que você está vendo</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="flex-grow">
+          <p class="mb-4">
+            Desenvolvimento de um portfólio moderno e responsivo com temas claro e escuro, usando as tecnologias mais recentes do ecossistema Angular.
+          </p>
+          <mat-chip-listbox aria-label="Tecnologias">
+            <mat-chip>Angular 17</mat-chip>
+            <mat-chip>TailwindCSS</mat-chip>
+            <mat-chip>Angular Material</mat-chip>
+            <mat-chip>Vercel</mat-chip>
+          </mat-chip-listbox>
+        </mat-card-content>
+        <mat-card-actions>
+          <a mat-button color="primary" href="https://github.com/StephanyMil/meu-portifolio" target="_blank">
+            <mat-icon>code</mat-icon>
+            VER CÓDIGO
+          </a>
+        </mat-card-actions>
+      </mat-card>
+
+
+    </div>
+  </div>
+
+  <!-- Projetos da Faculdade -->
+  <div>
+    <h2 class="text-3xl font-semibold border-b-2 border-olive pb-2 mb-8">Projetos da Faculdade</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card de Projeto da Faculdade 1 -->
+      <mat-card class="!bg-blush/30 dark:!bg-forest/50 transition-shadow hover:shadow-xl flex flex-col">
+        <mat-card-header>
+          <mat-card-title>Implementação de Estruturas de Dados</mat-card-title>
+          <mat-card-subtitle>Projeto de Algoritmos</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="flex-grow">
+          <p class="mb-4">
+            Desenvolvimento e análise de performance de diversas estruturas de dados (listas, árvores, grafos) como parte da disciplina de Estrutura de Dados.
+          </p>
+          <mat-chip-listbox aria-label="Tecnologias">
+            <mat-chip>C++</mat-chip>
+            <mat-chip>Makefile</mat-chip>
+            <mat-chip>Análise de Complexidade</mat-chip>
+          </mat-chip-listbox>
+        </mat-card-content>
+        <mat-card-actions>
+           <a mat-button color="primary" href="https://github.com/StephanyMil/Trabalho-sobre-grafos" target="_blank">
+            <mat-icon>code</mat-icon>
+            VER CÓDIGO
+          </a>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+  </div>
+</section>

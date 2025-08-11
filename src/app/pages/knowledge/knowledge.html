@@ -1,1 +1,53 @@
-<p>knowledge works!</p>
+<section class="container mx-auto px-6 py-16">
+  <h1 class="text-4xl font-bold text-center mb-12">Habilidades e Conhecimentos</h1>
+
+  <div class="max-w-4xl mx-auto">
+    <!-- Seção de Habilidades -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-olive">Tecnologias e Ferramentas</h2>
+      <mat-chip-listbox class="flex flex-wrap gap-3" aria-label="Tecnologias">
+        <mat-chip color="primary" selected>Java</mat-chip>
+        <mat-chip color="primary" selected>JavaScript</mat-chip>
+        <mat-chip color="primary" selected>TypeScript</mat-chip>
+        <mat-chip color="primary" selected>Kotlin</mat-chip>
+        <mat-chip color="primary" selected>PHP</mat-chip>
+        <mat-chip>C/C++</mat-chip>
+        <mat-chip>React</mat-chip>
+        <mat-chip>React Native</mat-chip>
+        <mat-chip>Spring Boot</mat-chip>
+        <mat-chip>Laravel</mat-chip>
+        <mat-chip>HTML</mat-chip>
+        <mat-chip>CSS</mat-chip>
+        <mat-chip color="accent" selected>Git</mat-chip>
+        <mat-chip color="accent" selected>Docker</mat-chip>
+        <mat-chip color="accent" selected>Kubernetes</mat-chip>
+        <mat-chip>MySQL</mat-chip>
+        <mat-chip>PostgreSQL</mat-chip>
+        <mat-chip>Figma</mat-chip>
+        <mat-chip>Scrum</mat-chip>
+      </mat-chip-listbox>
+    </div>
+
+    <!-- Seção de Certificados -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4 text-olive">Certificados</h2>
+      <div class="space-y-4">
+        <!-- Exemplo de Certificado -->
+        <mat-card class="!bg-blush/30 dark:!bg-forest/50">
+          <mat-card-content class="flex items-center justify-between">
+            <div>
+              <h3 class="font-bold">Nome do Certificado XYZ</h3>
+              <p class="text-sm text-forest/70 dark:text-cream/70">Emitido por: Instituição | Ano: 2024</p>
+            </div>
+            <a mat-stroked-button href="LINK_PARA_O_CERTIFICADO" target="_blank">
+              <mat-icon>open_in_new</mat-icon>
+              Ver Credencial
+            </a>
+          </mat-card-content>
+        </mat-card>
+
+        <!-- Adicione mais mat-card de certificados aqui -->
+      </div>
+    </div>
+  </div>
+</section>
