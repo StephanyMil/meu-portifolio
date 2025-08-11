@@ -1,14 +1,17 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home';
-
+import { ProjectsComponent } from './pages/projects/projects';
+import { KnowledgeComponent } from './pages/knowledge/knowledge';
+import { ResumeComponent } from './pages/resume/resume';
+import { ContactComponent } from './pages/contact/contact';
 
 export const routes: Routes = [
-    // Rota padrão para a página inicial
-    { path: '', component: HomeComponent, title: 'Home | Stephany Milhomem' },
+  { path: '', component: HomeComponent, title: 'Home | Stephany Milhomem' },
 
-    // Adicione as outras rotas aqui depois...
-    // { path: 'projetos', component: ProjectsComponent, title: 'Projetos' },
+  { path: 'projetos', component: ProjectsComponent, title: 'Projetos | Stephany Milhomem' },
+  { path: 'conhecimentos', component: KnowledgeComponent, title: 'Conhecimentos | Stephany Milhomem' },
+  { path: 'curriculo', component: ResumeComponent, title: 'Currículo | Stephany Milhomem' },
+  { path: 'contato', component: ContactComponent, title: 'Contato | Stephany Milhomem' },
 
-    // Rota coringa para redirecionar para a home
-    { path: '**', redirectTo: '', pathMatch: 'full' }
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

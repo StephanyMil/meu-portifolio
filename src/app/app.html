@@ -1,33 +1,11 @@
-<!--
-  Esta é a estrutura principal do seu site.
-  A div externa controla o tema (claro/escuro) usando classes do Tailwind.
-  - bg-cream e text-forest: Estilos para o tema claro.
-  - dark:bg-forest e dark:text-cream: Estilos para o tema escuro.
-  - min-h-screen: Garante que o layout ocupe a tela inteira.
--->
 <div class="bg-cream text-forest dark:bg-forest dark:text-cream min-h-screen font-sans">
 
-  <!--
-    Renderiza o componente do Header.
-    Ele contém a barra de navegação, o logo e o seletor de tema.
-  -->
   <app-header></app-header>
 
-  <!--
-    Esta é a área principal onde o conteúdo das suas páginas será renderizado.
-    O <router-outlet> é um marcador especial do Angular. Quando você navega
-    para /projetos, o componente ProjectsComponent é inserido aqui.
-    - pt-16 (padding-top: 4rem): Adiciona um espaço no topo para que o conteúdo
-      não fique escondido atrás do header, que tem uma altura fixa de 64px (4rem).
-  -->
   <main class="pt-16">
     <router-outlet></router-outlet>
   </main>
 
-  <!--
-    Renderiza o componente do Footer.
-    Ele contém as informações de copyright no final da página.
-  -->
   <app-footer></app-footer>
 
 </div>
